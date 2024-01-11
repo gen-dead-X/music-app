@@ -28,6 +28,11 @@ export type LogInType = {
   password: string;
 };
 
+export type SignUpType = LogInType & {
+  phoneNumber: number;
+  confirmPassword: string;
+};
+
 export type Profile = {
   userType: string;
   name?: string;

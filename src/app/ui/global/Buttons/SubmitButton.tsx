@@ -1,13 +1,13 @@
-import { ButtonHTMLAttributes } from 'react';
+import { HTMLAttributes } from 'react';
 import './_SubmitButton.scoped.scss';
 
 export default function SubmitButton({
-  ...buttonProps
-}: Readonly<ButtonHTMLAttributes<HTMLButtonElement>>) {
+  ...divProps
+}: Readonly<HTMLAttributes<HTMLDivElement>>) {
   return (
-    <button
-      {...buttonProps}
-      className={'submit-popup-button ' + buttonProps.className}
-    ></button>
+    <div
+      {...divProps}
+      className={'submit-popup-button ' + divProps.className}
+    ></div>
   );
 }
