@@ -1,0 +1,36 @@
+.login-list-selected {
+  position: relative;
+  color: black;
+  display: inline-block;
+
+  &:hover {
+    color: black;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    background-color: black;
+    transform-origin: bottom;
+    transition: all 0.5s;
+  }
+
+  &:hover::after {
+    transform: scale(100%);
+  }
+}
+
+body.dark {
+  .login-list-selected {
+    color: white;
+
+    &::after {
+      background-color: white;
+    }
+  }
+}
