@@ -36,7 +36,7 @@ export default function Loginform() {
   };
 
   return (
-    <section className='flex h-full w-full flex-col items-center justify-between pt-20'>
+    <section className='flex h-full w-full flex-col items-center justify-between pt-20 overflow-auto'>
       <nav>
         <ul className='flex justify-between gap-10 border-b-[2px] pb-[14px] text-[#8a8a8a] dark:border-gray-600'>
           <li>Help</li>
